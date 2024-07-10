@@ -22,23 +22,29 @@ Usage: python3 netTool.py -t target_host -p port
 ### Examples
 
 1. **Initialize a command shell:**
+   
    ```bash
    python3 netTool.py -t 192.168.0.1 -p 5555 -l -c
-2. **Upload a file to a specified destination:**
+3. **Upload a file to a specified destination:**
+   
    ```bash
    python3 netTool.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe
-3. **Execute a command upon receiving a connection:**
+4. **Execute a command upon receiving a connection:**
+   
    ```bash
    python3 netTool.py -t 192.168.0.1 -p 5555 -l -e="cat /etc/passwd"
-4. **Send data to a target host:**
+5. **Send data to a target host:**
+   
    ```bash
    echo 'ABCDEFGHI' | python3 netTool.py -t 192.168.11.12 -p 135
 
 ## Installation
 To use Net Tool, ensure you have Python 3 installed on your system. Clone the repository and navigate to the directory containing the script.
 
-git clone https://github.com/yourusername/netTool.git
+```bash
+git clone https://github.com/karthikvadla09/netTool.git
 cd netTool
+```
 
 ## How it works
 **Client-Side Operation**
